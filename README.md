@@ -27,38 +27,23 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
     |
     |____data
     |      |
-    |      |____weights.h5
+    |      |____weights.h5          - wights of the pre-trained model
     |      |
-    |      |____test.mp4
+    |      |____test.mp4            - test video
     |      |
-    |      |____train.mp4
+    |      |____train.mp4           - train video
     |      |
-    |      |____test_pred.txt
+    |      |____test_pred.txt       - model prediction of test data
     |
-    |____Speed_Estimation.ipynb
+    |____Speed_Estimation.ipynb     - 3DCNN model with preprocessing pipeline
     |
-    |____labels.txt
+    |____labels.txt                 - ground truth of train data (train.mp4).
     |
-    |____3D_CNN_model.png
+    |____cnn_network.png            - architecture of 3DCNN model
     |
-    |____requirements.txt
+    |____requirements.txt           - required libraries
     |
-    |____val_loss.png
-
-## Function of files
-
-1. Speed_Estimation.ipynb - 3DCNN model with preprocessing pipeline
-2. labels.txt - ground truth of train data (train.mp4). Each frame of train.mp4 has a label equal to the ego speed.
-3. 3D_CNN_model.png - architecture of 3DCNN model
-4. requirements.txt - required libraries
-5. val_loss.png - graphic of validation loss on test data
-
-data:
-
-1. weights.h5 - wights of the pre-trained model
-2. test.mp4 - test video
-3. train.mp4 - train video
-4. test_pred.txt - model prediction of test data
+    |____mse_loss.png               - graphic of mse loss on train and validation data
 
 ## 3D CNN Architecture
 
