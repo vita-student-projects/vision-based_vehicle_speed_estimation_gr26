@@ -6,13 +6,6 @@ This work is a part of ”Building AV Autopilot” Project of CIVIL-459 course a
 
 This work is aim to solve this problem by estimating the ego vehicle speed using only frames from a single front-facing monocular camera with a mask of the lane to preserve spatiotemporal features as input and receive high performance of vehicle speed estimation as output.
 
-## 3D CNN Architecture
-
-<p align="center">
-<img width="600" src="./3D_CNN.png"/>
-<p align="center">the architecture of best model: 3D CNN</p>
-</p>
-
 ## Prediction Result
 
 <div style="display: flex; justify-content: center;">
@@ -66,3 +59,10 @@ data:
 2. test.mp4 - test video
 3. train.mp4 - train video
 4. test_pred.txt - model prediction of test data
+
+## 3D CNN Architecture
+
+<p align="center">
+<img width="600" src="./cnn_network.png"/>
+<p align="center">the architecture of best model: 3D CNN</p>
+</p>
