@@ -9,7 +9,7 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
 ## 3D CNN Architecture
 
 <p align="center">
-<img width="800" src="./3D_CNN.png"/>
+<img width="600" src="./3D_CNN.png"/>
 <p align="center">the architecture of best model: 3D CNN</p>
 </p>
 
