@@ -6,17 +6,39 @@ This work is a part of ”Building AV Autopilot” Project of CIVIL-459 course a
 
 This work is aim to solve this problem by estimating the ego vehicle speed using only frames from a single front-facing monocular camera with a mask of the lane to preserve spatiotemporal features as input and receive high performance of vehicle speed estimation as output.
 
+## 3D CNN Architecture
+
+<p align="center">
+<img width="800" src="./3D_CNN.png"/>
+<p align="center">the architecture of best model: 3D CNN</p>
+</p>
+
+## Prediction Result
+
+<div style="display: flex; justify-content: center;">
+<video align="center" width="640" height="480" controls>
+    <source src="./data/prediction.mp4" type="video/mp4">
+</video>
+</div>
+
+## Validation Loss
+
+<p align="center">
+<img width="600" src="./mse_loss.jpeg"/>
+<p align="center">mean square error loss on both train dataset and validation dataset</p>
+</p>
+
 ## Files Structure:
 
     ego-vehicle-speed-estimation
     |
     |____data
     |      |
-    |      |____c3d-sports1M_weights.h5 (unable to be upload due to no more storage usage)
+    |      |____weights.h5
     |      |
-    |      |____test.mp4 (unable to be upload due to no more storage usage)
+    |      |____test.mp4
     |      |
-    |      |____train.mp4 (unable to be upload due to no more storage usage)
+    |      |____train.mp4
     |      |
     |      |____test_pred.txt
     |
@@ -40,11 +62,7 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
 
 data:
 
-1. c3d-sports1M_weights.h5 - wights of the pre-trained model
+1. weights.h5 - wights of the pre-trained model
 2. test.mp4 - test video
 3. train.mp4 - train video
 4. test_pred.txt - model prediction of test data
-
-## 3D CNN Architecture
-
-![Alt Text](./cnn_network.png)
