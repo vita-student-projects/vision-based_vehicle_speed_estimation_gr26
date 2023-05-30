@@ -45,9 +45,12 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
     |
     |____mse_loss.png               - graphic of mse loss on train and validation data
 
+
 ## 3D CNN Architecture
 
 <p align="center">
-<img width="600" src="./cnn_network.png"/>
+<img width="300" src="./cnn_network.png"/>
 <p align="center">the architecture of best model: 3D CNN</p>
 </p>
+
+## Contributions:
