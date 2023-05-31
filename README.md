@@ -49,7 +49,7 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
     |      |____test1-test5             - prediction results of requested 5 test videos
     |
     |
-    |____Speed_Estimation.ipynb         - final pipeline (includes 3D CNN)
+    |____Speed_Estimation.ipynb         - final pipeline (includes only 3D CNN)
     |
     |____Speed_Estimation_v2.0.ipynb    - pipeline with more debug details
     |
