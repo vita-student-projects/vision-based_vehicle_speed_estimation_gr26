@@ -25,7 +25,7 @@ https://github.com/vita-student-projects/vision-based_vehicle_speed_estimation_g
     |      |
     |      |____weights.h5              - wights of the final model (3D CNN)
     |      |
-    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained model
+    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained 3DCNN model on "SportM1" datas
     |      |
     |      |____test.mp4                - test video
     |      |
@@ -45,6 +45,8 @@ https://github.com/vita-student-projects/vision-based_vehicle_speed_estimation_g
     |
     |____mse_loss.png                   - graphic of mse loss on train and validation data
 
+## Usage 
+
 ## Dataset
 
 to do
@@ -55,7 +57,24 @@ to do
 
 ## Piplines
 
-to do
+1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in 
+    ego-vehicle-speed-estimation
+    |
+    |____data
+          |
+          |____c3d-sports1M_weights.h5  - wights of the pre-trained 3DCNN model on "SportM1" datas
+2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh] or find it in 
+    ego-vehicle-speed-estimation
+    |
+    |____data
+    |      |
+    |      |____train.mp4   - train video
+    |      |
+    |      |____test.mp4   - test video
+    |      
+    |
+    |____labels.txt - ground truth of train data (train.mp4).
+          
 
 ## The Best Model: 3D CNN Architecture
 
