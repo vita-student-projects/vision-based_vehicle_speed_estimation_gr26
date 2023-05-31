@@ -61,7 +61,7 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
 DataSet used  in this work was reuqired from the speed prediction challenge posted by https://comma.ai/. The available of this data set can find on comma.ai website [https://goo.gl/ERi7Uh]. This Dataset consists of 17 minuntes video (**train.mp4**) from a single front-facing monocular camera from Hyundai Sonata and labels (**labels.txt**) for each frame. In nutshell, this DataSet has 20400 frames which each frame has value of speed as label.
 
 
-## Piplines
+## Usage
 
 1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in **data**-->**c3d-sports1M_weights.h5**  - wights of the pre-trained 3DCNN model on "SportM1" datas
           
