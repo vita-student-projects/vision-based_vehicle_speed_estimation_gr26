@@ -41,6 +41,8 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
     |
     |____Speed_Estimation.ipynb         - final pipeline (includes 3D CNN)
     |
+    |____Work_space_speed_estimation.ipynb - source-working notebook with all models and their training result
+    |
     |____Speed_Estimation_v1.0.ipynb    - pipeline with more debug details
     |
     |____labels.txt                     - ground truth of train data (train.mp4).
@@ -69,10 +71,13 @@ DataSet used  in this work was reuqired from the speed prediction challenge post
 
 4. Download the file **requirements.txt** with required libraries to run notebooks
 
-5. Follow the steps in **Speed_Estimation.ipynb** to reproduce result
+Chose further manipulation : 
 
-6. Follow the steps in **Speed_Estimation_v1.0.ipynb** for a walk-through of the training and testing of the network
+5. **Reproduce best result** : Follow the steps in **Speed_Estimation.ipynb** to reproduce result
 
+6. **Try to train by yourself** : Follow the steps in **Speed_Estimation_v1.0.ipynb** for a walk-through of the training and testing of the network
+
+7. **See all works including training attamps for all models** : **Work_space_speed_estimation.ipynb** - source-working notebook with all models and their training result
           
 
 ## The Best Model: 3D CNN Architecture
