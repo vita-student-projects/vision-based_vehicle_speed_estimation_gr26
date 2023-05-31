@@ -12,7 +12,7 @@ Overall, this README provides an overview of the dataset, data augmentation tech
 
 https://github.com/vita-student-projects/vision-based_vehicle_speed_estimation_gr26/assets/99803920/ae21e893-207d-4c84-a186-b83329f63e8c
 
-Note that this is the result when the network is purely trained on comma.ai data and tested on train.mp3 data with completely different lighting conditions and different scene dynamics. Most of the error on the train.mp3 footage occurs at the turns, which is limitedly seen in comma.ai [https://www.comma.ai]  dataset
+Note that this is the result when the network is purely trained on comma.ai data and tested on train.mp3 data with completely different lighting conditions and different scene dynamics. Most of the error on the train.mp3 footage occurs at the turns, which is limitedly seen in comma.ai [https://www.comma.ai] dataset
 
 ## Validation Loss during train model
 
@@ -23,7 +23,8 @@ Note that this is the result when the network is purely trained on comma.ai data
 In this particular project, we have chosen to utilize the **Mean Squared Error (MSE)** as our loss function. The reason behind this choice stems from the nature of our task, which involves predicting the speed. In this context, speed prediction is considered a regression problem, where the goal is to estimate a continuous value rather than a categorical or discrete outcome.
 
 **Result** : By achieving an MSE of around 5 across the validation sets, we can have increased confidence in the reliability of our speed prediction system, as it demonstrates a relatively small average deviation from the true speed values.
-## Usage:
+
+## Files Structure:
 
     ego-vehicle-speed-estimation
     |
@@ -31,54 +32,57 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
     |      |
     |      |____weights.h5              - wights of the final model (3D CNN)
     |      |
-    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained 3DCNN model on "SportM1" datas
+    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained model on "Sports1M"
     |      |
     |      |____test.mp4                - test video
     |      |
     |      |____train.mp4               - train video
+    |
+    |____logs
     |      |
-    |      |____test_pred.txt           - model prediction of test data
+    |      |____labels.txt              - ground truth of train data (test.mp4)
+    |      |
+    |      |____test_pred.txt           - prediction results of test.mp4
+    |      |
+    |      |____test_out.mp4            - test video with predicted speed and mse error
+    |      |
+    |      |____test1-test5             - prediction results of requested 5 test videos
+    |
     |
     |____Speed_Estimation.ipynb         - final pipeline (includes 3D CNN)
     |
-    |____Work_space_speed_estimation.ipynb - source-working notebook with all models and their training result
+    |____Speed_Estimation_v2.0.ipynb    - pipeline with more debug details
     |
-    |____Speed_Estimation_v1.0.ipynb    - pipeline with more debug details
+    |____work_space_speed_est.ipynb     - source-working notebook (includes train logs)
     |
-    |____labels.txt                     - ground truth of train data (train.mp4).
+    |____labels.txt                     - ground truth of train data (train.mp4)
     |
     |____cnn_network.png                - architecture of 3DCNN model
     |
     |____requirements.txt               - required libraries
     |
-    |____mse_loss.png                   - graphic of mse loss on train and validation data
-
-    
-
+    |____mse_loss.png                   - graphic of mse loss on train and test data
 
 ## Dataset
 
-DataSet used  in this work was reuqired from the speed prediction challenge posted by https://comma.ai/. The available of this data set can find on comma.ai website [https://goo.gl/ERi7Uh]. This Dataset consists of 17 minuntes video (**train.mp4**) from a single front-facing monocular camera from Hyundai Sonata and labels (**labels.txt**) for each frame. In nutshell, this DataSet has 20400 frames which each frame has value of speed as label.
-
+DataSet used in this work was reuqired from the speed prediction challenge posted by https://comma.ai/. The available of this data set can find on comma.ai website [https://goo.gl/ERi7Uh]. This Dataset consists of 17 minuntes video (**train.mp4**) from a single front-facing monocular camera from Hyundai Sonata and labels (**labels.txt**) for each frame. In nutshell, this DataSet has 20400 frames which each frame has value of speed as label.
 
 ## Usage
 
-1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in **data**-->**c3d-sports1M_weights.h5**  - wights of the pre-trained 3DCNN model on "SportM1" datas
-          
-2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh] or find it in **data**-->**train.mp4** and **test.mp4**; **labels.txt** - ground truth of train data (train.mp4) 
+1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in **data**-->**c3d-sports1M_weights.h5** - wights of the pre-trained 3DCNN model on "SportM1" datas
+2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh] or find it in **data**-->**train.mp4** and **test.mp4**; **labels.txt** - ground truth of train data (train.mp4)
 
 3. Download the final weights of 3D CNN model to repoduce result **data**-->**weights.h5** - wights of the final model (3D CNN)
 
 4. Download the file **requirements.txt** with required libraries to run notebooks
 
-Choose further manipulation : : 
+Choose further manipulation : :
 
 5.1 **Reproduce best result** : Follow the steps in **Speed_Estimation.ipynb** to reproduce result
 
 5.2 **Try to train by yourself** : Follow the steps in **Speed_Estimation_v1.0.ipynb** for a walk-through of the training and testing of the network
 
 5.3 **See all works including training attamps for all models** : **Work_space_speed_estimation.ipynb** - source-working notebook with all models and their training result
-          
 
 ## The Best Model: 3D CNN Architecture
 
@@ -87,14 +91,15 @@ Choose further manipulation : :
 <p align="center">The architecture of best model: 3D CNN</p>
 </p>
 
-The 3D Convolutional Neural Network (CNN) architecture is our best model for video analysis and processing. It excels at capturing both spatial and temporal information, enabling it to understand complex motion dynamics and learn fine-grained patterns. The 3D CNN's enhanced feature extraction and robustness to spatio-temporal variations make it highly effective in tasks such as speed prediction. Our model is  related on **2022 state-of-the-art work "Ego Vehicle Speed Estimation using 3D Convolution with Masked Attention”** by Mathew, A.M. and Khalid,T. [https://arxiv.org/pdf/2212.05432.pdf]. Additionally, the availability of the pretrained model on "SportM1" dataset allows for efficient transfer learning, leading to improved performance even with limited training data.
+The 3D Convolutional Neural Network (CNN) architecture is our best model for video analysis and processing. It excels at capturing both spatial and temporal information, enabling it to understand complex motion dynamics and learn fine-grained patterns. The 3D CNN's enhanced feature extraction and robustness to spatio-temporal variations make it highly effective in tasks such as speed prediction. Our model is related on **2022 state-of-the-art work "Ego Vehicle Speed Estimation using 3D Convolution with Masked Attention”** by Mathew, A.M. and Khalid,T. [https://arxiv.org/pdf/2212.05432.pdf]. Additionally, the availability of the pretrained model on "SportM1" dataset allows for efficient transfer learning, leading to improved performance even with limited training data.
 
 ## Contributions:
+
 ### Dataset
 
 - The dataset used for this project consists of a collection of images and corresponding labels representing the speed of the objects captured in the images.
 - The dataset contains a total of 20400 images.
-- The source of the dataset is video from comma.ai challenge ***train.mp** with labels for each frame **labels.txt**.
+- The source of the dataset is video from comma.ai challenge **\*train.mp** with labels for each frame **labels.txt**.
 - To ensure proper evaluation of the model's performance, we split the dataset into a training set and a test set. The training set consists of 90% of the images, while the remaining 10% of the images are allocated to the test set.
 
 ### Data Augmentation
@@ -137,7 +142,7 @@ The 3D Convolutional Neural Network (CNN) architecture is our best model for vid
 - The optimal configuration for the best model included a timestep of 16, a batch size of 4, and the AdamW optimizer.Additionally, it should be noted that the 3DCNN model, which was selected as the best model, incorporates dropout layers in its structure. Dropout is a regularization technique used to prevent overfitting by randomly deactivating a fraction of the neurons during training. The inclusion of dropout layers in the 3DCNN model helps to enhance its generalization capability and improve its performance in speed prediction tasks.
 
 ## TO DO NEXT
+
 1. Use shorter look-back time window to allow more fine-grained speed prediction. At the moment, the network looks 16 frames back in time and predicts the average speed during this period.
 
 2. Use semantic segmentation to cut off moving objects. Moving objects such as vehicles confuses the speed prediction w.r.t. the road. More data with diverse conditions may also be able to clear this issue.
-
