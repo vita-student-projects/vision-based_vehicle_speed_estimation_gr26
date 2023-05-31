@@ -71,7 +71,7 @@ DataSet used  in this work was reuqired from the speed prediction challenge post
 
 4. Download the file **requirements.txt** with required libraries to run notebooks
 
-Chose further manipulation : 
+Choose further manipulation : : 
 
 5. **Reproduce best result** : Follow the steps in **Speed_Estimation.ipynb** to reproduce result
 
