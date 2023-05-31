@@ -27,23 +27,27 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
     |
     |____data
     |      |
-    |      |____weights.h5          - wights of the pre-trained model
+    |      |____weights.h5              - wights of the pre-trained model
     |      |
-    |      |____test.mp4            - test video
+    |      |____test.mp4                - test video
     |      |
-    |      |____train.mp4           - train video
+    |      |____train.mp4               - train video
     |      |
-    |      |____test_pred.txt       - model prediction of test data
+    |      |____test_pred.txt           - model prediction of test data
     |
-    |____Speed_Estimation.ipynb     - 3DCNN model with preprocessing pipeline
+    |____Speed_Estimation_v1.0.ipynb    - final pipeline (includes 3D CNN)
     |
-    |____labels.txt                 - ground truth of train data (train.mp4).
     |
-    |____cnn_network.png            - architecture of 3DCNN model
+    |____Speed_Estimation_v1.0.ipynb    - pipeline with more debug details
     |
-    |____requirements.txt           - required libraries
     |
-    |____mse_loss.png               - graphic of mse loss on train and validation data
+    |____labels.txt                     - ground truth of train data (train.mp4).
+    |
+    |____cnn_network.png                - architecture of 3DCNN model
+    |
+    |____requirements.txt               - required libraries
+    |
+    |____mse_loss.png                   - graphic of mse loss on train and validation data
 
 ## Dataset
 
