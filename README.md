@@ -20,8 +20,6 @@ Note that this is the result when the network is purely trained on comma.ai data
 </p>
 In this particular project, we have chosen to utilize the **Mean Squared Error (MSE)** as our loss function. The reason behind this choice stems from the nature of our task, which involves predicting the speed. In this context, speed prediction is considered a regression problem, where the goal is to estimate a continuous value rather than a categorical or discrete outcome.
 
-By employing the MSE loss function, we are able to measure the discrepancy between our predicted speed values and the actual speed values in a quantitative manner. The MSE calculates the average squared difference between these values, providing a comprehensive assessment of the accuracy and performance of our regression model.
-
 **Result** : By achieving an MSE of around 14 across the validation sets, we can have increased confidence in the reliability of our speed prediction system, as it demonstrates a relatively small average deviation from the true speed values.
 ## Usage:
 
