@@ -57,28 +57,16 @@ to do
 
 ## Piplines
 
-1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in 
-
-    ego-vehicle-speed-estimation
-    |
-    |____data
-          |
-          |____c3d-sports1M_weights.h5  - wights of the pre-trained 3DCNN model on "SportM1" datas
+1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in **data**-->**c3d-sports1M_weights.h5**  - wights of the pre-trained 3DCNN model on "SportM1" datas
           
-2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh] or find it in 
+2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh] or find it in **data**-->**train.mp4** and **test.mp4**; **labels.txt** - ground truth of train data (train.mp4) 
 
-    ego-vehicle-speed-estimation
-    |
-    |____data
-    
- 
-    |
-    |      |____train.mp4   - train video
-    |      |
-    |      |____test.mp4   - test video
-    |      
-    |
-    |____labels.txt - ground truth of train data (train.mp4).
+3. Download the final weights of 3D CNN model to repoduce result **data**-->**weights.h5** - wights of the final model (3D CNN)
+
+4. Follow the steps in **Speed_Estimation.ipynb** to reproduce result
+
+6. Follow the steps in **Speed_Estimation_v1.0.ipynb** for a walk-through of the training and testing of the network
+
           
 
 ## The Best Model: 3D CNN Architecture
