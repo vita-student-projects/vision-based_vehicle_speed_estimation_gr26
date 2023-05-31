@@ -8,11 +8,7 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
 
 ## Prediction Result
 
-<div style="display: flex; justify-content: center;">
-<video align="center" width="640" height="480" controls>
-    <source src="./logs/test_out.mp4" type="video/mp4">
-</video>
-</div>
+https://github.com/vita-student-projects/vision-based_vehicle_speed_estimation_gr26/assets/99803920/ae21e893-207d-4c84-a186-b83329f63e8c
 
 ## Validation Loss
 
