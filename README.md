@@ -10,6 +10,8 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
 
 https://github.com/vita-student-projects/vision-based_vehicle_speed_estimation_gr26/assets/99803920/ae21e893-207d-4c84-a186-b83329f63e8c
 
+Note that this is the result when the network is purely trained on comma.ai data and tested on train.mp3 data with completely different lighting conditions and different scene dynamics. Most of the error on the train.mp3 footage occurs at the turns, which is limitedly seen in comma.ai [https://www.comma.ai]  dataset
+
 ## Validation Loss during train model
 
 <p align="center">
