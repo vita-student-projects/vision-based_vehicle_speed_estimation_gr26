@@ -53,7 +53,7 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
     |
     |____Speed_Estimation_v2.0.ipynb    - pipeline with more debug details
     |
-    |____work_space_speed_est.ipynb     - source-working notebook (includes train logs)
+    |____work_space_speed_est.ipynb     - source-working notebook (includes traininig records)
     |
     |____labels.txt                     - ground truth of train data (train.mp4)
     |
