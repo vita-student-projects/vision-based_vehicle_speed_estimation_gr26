@@ -2,4 +2,4 @@ data/weights.h5 filter=lfs diff=lfs merge=lfs -text
 data/prediction.mp4 filter=lfs diff=lfs merge=lfs -text
 data/test.mp4 filter=lfs diff=lfs merge=lfs -text
 data/train.mp4 filter=lfs diff=lfs merge=lfs -text
-data/c3d-sports1M_Weights.h5 filter=lfs diff=lfs merge=lfs -text
+data/c3d-sports1M_weights.h5 filter=lfs diff=lfs merge=lfs -text
