@@ -16,9 +16,11 @@ Note that this is the result when the network is purely trained on comma.ai data
 
 <p align="center">
 <img width="600" src="./mse_loss.jpeg"/>
-<p align="center">mean square error loss on both train dataset and validation dataset</p>
+<p align="center"> Mean Square Error loss of train and validation dataset</p>
 </p>
+Note : In this particular project, we have chosen to utilize the **Mean Squared Error (MSE)** as our loss function. The reason behind this choice stems from the nature of our task, which involves predicting the speed. In this context, speed prediction is considered a regression problem, where the goal is to estimate a continuous value rather than a categorical or discrete outcome.
 
+By employing the MSE loss function, we are able to measure the discrepancy between our predicted speed values and the actual speed values in a quantitative manner. The MSE calculates the average squared difference between these values, providing a comprehensive assessment of the accuracy and performance of our regression model.
 ## Usage:
 
     ego-vehicle-speed-estimation
