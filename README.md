@@ -101,7 +101,7 @@ The 3D Convolutional Neural Network (CNN) architecture is our best model for vid
 
 - Four different architectures were considered for the task: 3DCNN, 3DCNN + GRU, 3DCNN + LSTM, and ResNet18.
 - The 3DCNN architecture was chosen as the baseline model, while the other architectures were explored to capture temporal dependencies.
-- The number of parameters for each model is as follows: ResNet18 : 511,425, 3DCNN: 77,999,873.
+- The number of parameters for each model is as follows: ResNet18 : 511,425, 3DCNN: 77,999,873, 3DCNN + LSTM and GRU : 48,181,889.
 - The motivation behind using these specific models was to investigate the effectiveness of different architectures in capturing spatio-temporal features and improving performance in speed prediction tasks.
 
 ### Training Details
