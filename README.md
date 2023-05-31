@@ -37,9 +37,7 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
     |
     |____Speed_Estimation_v1.0.ipynb    - final pipeline (includes 3D CNN)
     |
-    |
     |____Speed_Estimation_v1.0.ipynb    - pipeline with more debug details
-    |
     |
     |____labels.txt                     - ground truth of train data (train.mp4).
     |
