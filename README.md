@@ -27,7 +27,9 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
     |
     |____data
     |      |
-    |      |____weights.h5              - wights of the pre-trained model
+    |      |____weights.h5              - wights of the final model (3D CNN)
+    |      |
+    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained model
     |      |
     |      |____test.mp4                - test video
     |      |
@@ -35,7 +37,7 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
     |      |
     |      |____test_pred.txt           - model prediction of test data
     |
-    |____Speed_Estimation_v1.0.ipynb    - final pipeline (includes 3D CNN)
+    |____Speed_Estimation.ipynb         - final pipeline (includes 3D CNN)
     |
     |____Speed_Estimation_v1.0.ipynb    - pipeline with more debug details
     |
