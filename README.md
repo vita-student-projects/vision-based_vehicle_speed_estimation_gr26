@@ -73,11 +73,11 @@ DataSet used  in this work was reuqired from the speed prediction challenge post
 
 Choose further manipulation : : 
 
-5. **Reproduce best result** : Follow the steps in **Speed_Estimation.ipynb** to reproduce result
+5.1 **Reproduce best result** : Follow the steps in **Speed_Estimation.ipynb** to reproduce result
 
-6. **Try to train by yourself** : Follow the steps in **Speed_Estimation_v1.0.ipynb** for a walk-through of the training and testing of the network
+5.2 **Try to train by yourself** : Follow the steps in **Speed_Estimation_v1.0.ipynb** for a walk-through of the training and testing of the network
 
-7. **See all works including training attamps for all models** : **Work_space_speed_estimation.ipynb** - source-working notebook with all models and their training result
+5.3 **See all works including training attamps for all models** : **Work_space_speed_estimation.ipynb** - source-working notebook with all models and their training result
           
 
 ## The Best Model: 3D CNN Architecture
