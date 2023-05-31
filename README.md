@@ -131,3 +131,8 @@ The 3D Convolutional Neural Network (CNN) architecture is our best model for vid
 - After extensive experimentation, the best-performing model was determined to be the 3DCNN architecture.
 - The optimal configuration for the best model included a timestep of 16, a batch size of 4, and the AdamW optimizer.Additionally, it should be noted that the 3DCNN model, which was selected as the best model, incorporates dropout layers in its structure. Dropout is a regularization technique used to prevent overfitting by randomly deactivating a fraction of the neurons during training. The inclusion of dropout layers in the 3DCNN model helps to enhance its generalization capability and improve its performance in speed prediction tasks.
 
+## TO DO NEXT
+1. Use shorter look-back time window to allow more fine-grained speed prediction. At the moment, the network looks 16 frames back in time and predicts the average speed during this period.
+
+2.Use semantic segmentation to cut off moving objects. Moving objects such as vehicles confuses the speed prediction w.r.t. the road. More data with diverse conditions may also be able to clear this issue.
+
