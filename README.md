@@ -10,7 +10,7 @@ This work is aim to solve this problem by estimating the ego vehicle speed using
 
 <div style="display: flex; justify-content: center;">
 <video align="center" width="640" height="480" controls>
-    <source src="./data/prediction.mp4" type="video/mp4">
+    <source src="./logs/test_out.mp4" type="video/mp4">
 </video>
 </div>
 
