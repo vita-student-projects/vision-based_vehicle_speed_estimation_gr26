@@ -26,7 +26,7 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
 
 ## Files Structure:
 
-    ego-vehicle-speed-estimation
+    Vision-based Vehicle Speed Estimation
     |
     |____data
     |      |
