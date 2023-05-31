@@ -6,18 +6,18 @@ This work is a part of ”Building AV Autopilot” Project of CIVIL-459 course a
 
 This work is aim to solve this problem by estimating the ego vehicle speed using only frames from a single front-facing monocular camera with a mask of the lane to preserve spatiotemporal features as input and receive high performance of vehicle speed estimation as output.
 
-## Prediction Result
+## Result
 
 https://github.com/vita-student-projects/vision-based_vehicle_speed_estimation_gr26/assets/99803920/ae21e893-207d-4c84-a186-b83329f63e8c
 
-## Validation Loss
+## Validation Loss during train model
 
 <p align="center">
 <img width="600" src="./mse_loss.jpeg"/>
 <p align="center">mean square error loss on both train dataset and validation dataset</p>
 </p>
 
-## Files Structure:
+## Usage:
 
     ego-vehicle-speed-estimation
     |
