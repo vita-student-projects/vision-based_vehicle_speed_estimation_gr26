@@ -63,7 +63,9 @@ to do
 
 3. Download the final weights of 3D CNN model to repoduce result **data**-->**weights.h5** - wights of the final model (3D CNN)
 
-4. Follow the steps in **Speed_Estimation.ipynb** to reproduce result
+4. Download the file **requirements.txt** with required libraries to run notebooks
+
+5. Follow the steps in **Speed_Estimation.ipynb** to reproduce result
 
 6. Follow the steps in **Speed_Estimation_v1.0.ipynb** for a walk-through of the training and testing of the network
 
