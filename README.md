@@ -45,7 +45,6 @@ https://github.com/vita-student-projects/vision-based_vehicle_speed_estimation_g
     |
     |____mse_loss.png                   - graphic of mse loss on train and validation data
 
-## Usage 
 
 ## Dataset
 
