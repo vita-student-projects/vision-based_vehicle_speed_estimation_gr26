@@ -58,12 +58,15 @@ to do
 ## Piplines
 
 1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in 
+
     ego-vehicle-speed-estimation
     |
     |____data
           |
           |____c3d-sports1M_weights.h5  - wights of the pre-trained 3DCNN model on "SportM1" datas
+          
 2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh] or find it in 
+
     ego-vehicle-speed-estimation
     |
     |____data
