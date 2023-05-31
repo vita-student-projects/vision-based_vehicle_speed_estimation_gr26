@@ -32,7 +32,7 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
     |      |
     |      |____weights.h5              - wights of the final model (3D CNN)
     |      |
-    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained model on "Sports1M"
+    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained model on "Sports1M" dataset
     |      |
     |      |____test.mp4                - test video
     |      |
