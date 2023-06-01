@@ -55,7 +55,7 @@ DataSet used in this work was reuqired from the speed prediction challenge poste
 1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2]  - wights of the pre-trained 3DCNN model on "SportM1" datas
 2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh]  - ground truth of train data (train.mp4)
 
-3. Download the final weights of 3D CNN model to repoduce result Google Drive [https://drive.google.com/drive/folders/1kDo8S_IP6Em5-IjpCo0irVqbNUr7W0wX?usp=sharing] wights of the final model (3D CNN)
+3. Download on Google Drive the final weights of 3D CNN model to repoduce result. Google Drive link : [https://drive.google.com/drive/folders/1kDo8S_IP6Em5-IjpCo0irVqbNUr7W0wX?usp=sharing] wights of the final model (3D CNN)
 
 4. Download the file **requirements.txt** with required libraries to run notebooks
 
