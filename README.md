@@ -30,24 +30,7 @@ In this particular project, we have chosen to utilize the **Mean Squared Error (
     |
     |____data
     |      |
-    |      |____weights.h5              - wights of the final model (3D CNN)
-    |      |
-    |      |____c3d-sports1M_weights.h5 - wights of the pre-trained model on "Sports1M" dataset
-    |      |
-    |      |____test.mp4                - test video
-    |      |
-    |      |____train.mp4               - train video
-    |
-    |____logs
-    |      |
-    |      |____labels.txt              - ground truth of train data (test.mp4)
-    |      |
-    |      |____test_pred.txt           - prediction results of test.mp4
-    |      |
-    |      |____test_out.mp4            - test video with predicted speed and mse error
-    |      |
-    |      |____test1-test5             - prediction results of requested 5 test videos
-    |
+    |      |____labels.txt              - ground truth of train data (train.mp4) from comma.ai website
     |
     |____Speed_Estimation.ipynb         - final pipeline (includes only 3D CNN)
     |
@@ -69,10 +52,10 @@ DataSet used in this work was reuqired from the speed prediction challenge poste
 
 ## Usage
 
-1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2] or find it in **data**-->**c3d-sports1M_weights.h5** - wights of the pre-trained 3DCNN model on "SportM1" datas
-2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh] or find it in **data**-->**train.mp4** and **test.mp4**; **labels.txt** - ground truth of train data (train.mp4)
+1. Download the weights pretrained on the Sports-1M dataset [https://goo.gl/tsEUo2]  - wights of the pre-trained 3DCNN model on "SportM1" datas
+2. Download the training data from comma.ai website [https://goo.gl/ERi7Uh]  - ground truth of train data (train.mp4)
 
-3. Download the final weights of 3D CNN model to repoduce result **data**-->**weights.h5** - wights of the final model (3D CNN)
+3. Download the final weights of 3D CNN model to repoduce result Google Drive [https://drive.google.com/drive/folders/1kDo8S_IP6Em5-IjpCo0irVqbNUr7W0wX?usp=sharing] wights of the final model (3D CNN)
 
 4. Download the file **requirements.txt** with required libraries to run notebooks
 
